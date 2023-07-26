@@ -1,0 +1,70 @@
+GET http://localhost:5000/user
+
+###
+GET  http://127.0.0.1:5000/user/63a75322519334fe8338f1ac
+###
+POST  http://127.0.0.1:5000/user
+Content-Type: application/json
+
+{
+    "nip" : "1207050132",
+    "name" : "Yoss Sagita",
+    "phone" : "087817381242",
+    "email" : "yoss@gmail.com",
+    "gender" : "Male",
+    "position" : "Admin",
+    "address" : "Medan , Bungbunglang",
+    "age" : "31",
+    "password" : "secret1"
+}
+###
+
+PATCH  http://127.0.0.1:5000/user/63a749d0104f4a78a122cb88
+Content-Type: application/json
+
+{
+    "nip" : "1207050131",
+    "name" : "Zakki Mubarrook",
+    "phone" : "087817381942",
+    "email" : "zaki@gmail.com",
+    "gender" : "Male",
+    "position" : "OB",
+    "address" : "Garut , Bungbunglang",
+    "age" : "31",
+    "password" : "secret1"
+}
+
+###
+DELETE http://127.0.0.1:5000/user/63a74de69bbdbfd4e1d54716
+
+###
+GET http://127.0.0.1:5000/structure/63a81c48d2166be1b25c5c0d
+
+###
+POST  http://127.0.0.1:5000/structure
+Content-Type: application/json
+
+{
+    "drink" : 110,
+    "food" : 250,
+    "admin" : 1,
+    "cashier" : 2,
+    "waiters" : 3,
+    "officeBoy" : 1,
+    "developer" : 2
+}
+###
+PATCH   http://127.0.0.1:5000/structure/63a81c48d2166be1b25c5c0d
+Content-Type: application/json
+
+{
+    "drink" : 16400,
+    "food" : 13400,
+    "admin" : 1,
+    "cashier" : 2,
+    "waiters" : 3,
+    "officeBoy" : 1,
+    "developer" : 2
+}
+###
+GET  http://127.0.0.1:5000/structure/63a81c48d2166be1b25c5c0d
